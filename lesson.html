@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Content | Trigonometric Ratios</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="top-bar">
+    <a href="index.html" class="brand"><span class="angle-mark">&theta;</span> Trig Ratios</a>
+    <nav class="main" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lesson.html" aria-current="page">Lesson Content</a></li>
+        <li><a href="interactive.html">Interactive Learning</a></li>
+        <li><a href="practice.html">Practice Activities</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h2 class="section-title">Lesson Content</h2>
+    <p class="section-sub">Naming the sides, deriving the three ratios, and reading them off a reference triangle.</p>
+
+    <div class="arc-divider"><span class="label">1. Naming the sides</span></div>
+    <div class="card grid-2" style="display:grid;">
+      <div>
+        <p>In any right-angled triangle, once we fix an angle &theta; (other than the right angle), the three
+          sides take on names <em>relative to that angle</em>:</p>
+        <ul>
+          <li><strong>Hypotenuse</strong> &mdash; the longest side, opposite the right angle. It never changes name.</li>
+          <li><strong>Opposite</strong> &mdash; the side directly across from angle &theta;.</li>
+          <li><strong>Adjacent</strong> &mdash; the side next to angle &theta; that is not the hypotenuse.</li>
+        </ul>
+        <p>Swap which angle you're looking from, and "opposite" and "adjacent" swap too &mdash; only the
+          hypotenuse stays fixed.</p>
+      </div>
+      <div>
+        <svg width="260" height="200" viewBox="0 0 260 200">
+          <polygon points="20,180 220,180 220,30" fill="none" stroke="#0B2545" stroke-width="2"/>
+          <rect x="200" y="160" width="20" height="20" fill="none" stroke="#0B2545" stroke-width="1.5"/>
+          <path d="M 60 180 A 40 40 0 0 0 51 152" stroke="#EE6C4D" stroke-width="2" fill="none"/>
+          <text x="55" y="168" font-family="JetBrains Mono" font-size="13" fill="#EE6C4D">&theta;</text>
+          <text x="10" y="195" font-family="Source Sans 3" font-size="13" fill="#0B2545">A</text>
+          <text x="222" y="195" font-family="Source Sans 3" font-size="13" fill="#0B2545">B</text>
+          <text x="222" y="25" font-family="Source Sans 3" font-size="13" fill="#0B2545">C</text>
+          <text x="105" y="200" font-family="Source Sans 3" font-size="12" fill="#13315C">Adjacent</text>
+          <text x="228" y="110" font-family="Source Sans 3" font-size="12" fill="#13315C">Opposite</text>
+          <text x="90" y="95" font-family="Source Sans 3" font-size="12" fill="#13315C" transform="rotate(-37 90 95)">Hypotenuse</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="arc-divider"><span class="label">2. The three ratios &mdash; SOH CAH TOA</span></div>
+    <div class="card">
+      <p>For angle &theta; in a right-angled triangle:</p>
+      <p class="formula">sin&theta; = Opposite / Hypotenuse</p><br>
+      <p class="formula">cos&theta; = Adjacent / Hypotenuse</p><br>
+      <p class="formula">tan&theta; = Opposite / Adjacent</p>
+      <p>The mnemonic <strong>SOH&ndash;CAH&ndash;TOA</strong> encodes this: <strong>S</strong>ine =
+        <strong>O</strong>pposite/<strong>H</strong>ypotenuse; <strong>C</strong>osine =
+        <strong>A</strong>djacent/<strong>H</strong>ypotenuse; <strong>T</strong>angent =
+        <strong>O</strong>pposite/<strong>A</strong>djacent.</p>
+    </div>
+
+    <div class="arc-divider"><span class="label">3. Worked example</span></div>
+    <div class="card">
+      <p><span class="badge">Worked</span></p>
+      <p>A ladder leans against a wall, making an angle of 52&deg; with the ground. The ladder is 4 m long.
+        How high up the wall does it reach?</p>
+      <p>The height <em>h</em> is opposite the 52&deg; angle; the ladder (4 m) is the hypotenuse. So we use sine:</p>
+      <p class="formula">sin(52&deg;) = h / 4  &rArr;  h = 4 &times; sin(52&deg;) &asymp; 3.15 m</p>
+    </div>
+
+    <div class="arc-divider"><span class="label">4. Reference table</span></div>
+    <div class="card">
+      <table>
+        <thead><tr><th>&theta;</th><th>sin&theta;</th><th>cos&theta;</th><th>tan&theta;</th></tr></thead>
+        <tbody>
+          <tr><td>0&deg;</td><td>0</td><td>1</td><td>0</td></tr>
+          <tr><td>30&deg;</td><td>0.5</td><td>0.866</td><td>0.577</td></tr>
+          <tr><td>45&deg;</td><td>0.707</td><td>0.707</td><td>1</td></tr>
+          <tr><td>60&deg;</td><td>0.866</td><td>0.5</td><td>1.732</td></tr>
+          <tr><td>90&deg;</td><td>1</td><td>0</td><td>undefined</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.9rem;color:#5b6a86;">Compare these values with what the live diagram on the
+        <a href="index.html">Home page</a> shows as you change &theta;.</p>
+    </div>
+
+    <div class="arc-divider"><span class="label">Educational Design</span></div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Learning Indicators</h3>
+        <p>B7/SHS: <em>Learners can identify the sides of a right-angled triangle relative to a given angle
+          and apply sine, cosine and tangent ratios to solve for unknown sides and angles.</em></p>
+      </div>
+      <div class="card">
+        <h3>Success Criteria</h3>
+        <ul>
+          <li>I can label opposite, adjacent and hypotenuse for any marked angle.</li>
+          <li>I can choose the correct ratio (SOH, CAH or TOA) for a given problem.</li>
+          <li>I can compute an unknown side or angle to 2 decimal places / nearest degree.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Teaching &amp; Learning Resources</h3>
+        <p>Scientific calculators, GeoGebra applet, printed ratio table, whiteboard
+          triangle model, projector.</p>
+      </div>
+      <div class="card">
+        <h3>Core Competencies</h3>
+        <p>Critical thinking &amp; problem solving, digital literacy, communication &amp; collaboration
+          (paired ladder problems), personal development (self-checking with the calculator).</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>ICTD 361 &middot; In-Class Practical Assignment &middot; Group 3: Trigonometry</span>
+    <span>Prof. Peter Akayuure</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

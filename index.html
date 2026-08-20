@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trigonometric Ratios | ICTD 361 Mathematics Lesson</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="top-bar">
+    <a href="index.html" class="brand"><span class="angle-mark">&theta;</span> Trig Ratios</a>
+    <nav class="main" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="lesson.html">Lesson Content</a></li>
+        <li><a href="interactive.html">Interactive Learning</a></li>
+        <li><a href="practice.html">Practice Activities</a></li>
+        <li><a href="assessment.html">Assessment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="hero-eyebrow">ICTD 361 &middot; Web Technologies for Mathematics Teachers</div>
+      <h1>Trigonometric Ratios in Right-Angled Triangles</h1>
+      <p class="lede">SOH&ndash;CAH&ndash;TOA: how the three side-ratios of a right triangle let us find unknown
+        angles and lengths &mdash; from ladders leaning on walls to the angle of elevation to a kite.</p>
+      <div class="meta-row">
+        <span class="chip">Sub Strand: Measurement Of Triangles</span>
+        <span class="chip">Class Level: SHS 2</span>
+        <span class="chip">Duration: 1 period (60 Minutes)</span>
+        <span class="chip">Strand: Geometry Reasoning &amp; Measurement</span>
+      </div>
+    </div>
+    <div class="compass-wrap">
+      <svg id="angleSvg" width="280" height="240" viewBox="0 0 280 240">
+        <line id="sideAdj" x1="10" y1="20" x2="170" y2="220" stroke="#C9A227" stroke-width="3"/>
+        <line id="sideOpp" x1="170" y1="220" x2="170" y2="90" stroke="#EE6C4D" stroke-width="3"/>
+        <line id="sideHyp" x1="40" y1="220" x2="170" y2="90" stroke="#F2E8CF" stroke-width="3"/>
+        <path id="angleArc" d="" stroke="#F2E8CF" stroke-width="2" fill="none"/>
+        <circle id="pointC" cx="170" cy="90" r="4" fill="#EE6C4D"/>
+        <circle cx="40" cy="220" r="4" fill="#F2E8CF"/>
+        <text x="18" y="234" fill="#F2E8CF" font-family="JetBrains Mono" font-size="12">A</text>
+        <text x="176" y="234" fill="#F2E8CF" font-family="JetBrains Mono" font-size="12">B</text>
+      </svg>
+
+      <div class="angle-readout" id="angleReadout">
+        &theta; = <strong>40°</strong>
+      </div>
+      <div class="angle-readout">
+        sin&theta;=<span id="sinVal"></span> &nbsp; cos&theta;=<span id="cosVal"></span> &nbsp; tan&theta;=<span id="tanVal"></span>
+      </div>
+      <div class="angle-controls">
+        <button type="button" id="angleDown">&larr; decrease &theta;</button>
+        <button type="button" id="angleUp">increase &theta; &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <div class="arc-divider"><span class="label">Lesson Objectives</span></div>
+    <div class="card">
+      <p>By the end of this lesson, learners will be able to:</p>
+      <ol>
+        <li>Identify the hypotenuse, opposite and adjacent sides relative to a given angle in a right-angled triangle.</li>
+        <li>State and apply the sine, cosine and tangent ratios (SOH&ndash;CAH&ndash;TOA) to find unknown sides.</li>
+        <li>Apply trigonometric ratios to find unknown angles using inverse functions.</li>
+        <li>Solve real-life problems involving angles of elevation and depression.</li>
+      </ol>
+    </div>
+
+    <div class="arc-divider"><span class="label">Find your way around</span></div>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Lesson Content</h3>
+        <p>Definitions, the SOH&ndash;CAH&ndash;TOA triangle, worked derivations and a ratio reference table.</p>
+        <a href="lesson.html">Open lesson &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Interactive Learning</h3>
+        <p>Manipulate a GeoGebra triangle, explore a Desmos graph of sin&theta;, and watch a short video.</p>
+        <a href="interactive.html">Explore &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Practice &amp; Assessment</h3>
+        <p>Five worked practice questions with hints, then an auto-marked quiz.</p>
+        <a href="practice.html">Start practising &rarr;</a>
+      </div>
+    </div>
+
+    <div class="arc-divider"><span class="label">About this lesson</span></div>
+    <div class="card">
+      <h3>Teaching philosophy</h3>
+      <p>This lesson is grounded in <strong>constructivism</strong>, drawing on Bruner's theory of discovery
+        learning. Rather than being told the three ratios, learners drag the angle above and notice for
+        themselves how the ratios change &mdash; then confirm their conjecture using GeoGebra and Desmos
+        in the interactive session. Prior knowledge of Pythagoras' theorem and triangle naming conventions
+        is activated before new vocabulary (opposite, adjacent, hypotenuse) is introduced.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>ICTD 361 &middot; In-Class Practical Assignment &middot; Group 3: Trigonometry</span>
+    <span>Prof. Peter Akayuure</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
